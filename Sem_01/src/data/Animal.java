@@ -1,6 +1,6 @@
 package data;
 
-public abstract class Animal {
+public abstract class Animal implements IAnimal {
 	private String nume;
 
 	public Animal(String nume) {

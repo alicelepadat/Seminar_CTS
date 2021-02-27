@@ -44,4 +44,10 @@ public class Zoo {
 			this.zookeeper.feed(a);
 		}
 	}
+	
+	public void animalWalk() {
+		for(Animal a : animals) {
+			a.walk();
+		}
+	}
 }
