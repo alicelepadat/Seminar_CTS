@@ -11,7 +11,7 @@ public class Program {
 	public static void main(String[] args) {
 		List<Aplicant> listaAplicanti;
 		try {
-			listaAplicanti = AngajatReader.readAngajati("angajati.txt");
+			listaAplicanti = UniversalReader.readAplicants(new AngajatReader("angajati.txt"));
 			for(Aplicant aplicant :listaAplicanti)
 				System.out.println(aplicant.toString());
 		} catch (FileNotFoundException e) {
