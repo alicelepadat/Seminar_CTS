@@ -8,14 +8,14 @@ public class PresedinteLazy {
 	private static PresedinteLazy instance = null;
 
 	
-	public PresedinteLazy() {
+	private PresedinteLazy() {
 		this.nume = "Presedinte";
 		this.varsta = 40;
 		this.mandat = 2;
 	}
 
 
-	public PresedinteLazy(String nume, int varsta, int mandat) {
+	private PresedinteLazy(String nume, int varsta, int mandat) {
 		super();
 		this.nume = nume;
 		this.varsta = varsta;
