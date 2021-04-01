@@ -15,10 +15,15 @@ public class Program {
 	}
 	
 	public static void main(String[] args) {
+		//daca primim in cerinta clasa abstracta -> adapter de obiecte
+		//daca primim interfata -> adapter de clasa
 		Bilet bilet = new Bilet(30f);
 		rezervaSiAfiseazaBiletLaCasa(bilet);
 		
-		IBiletOnline adapter = new BiletAdapter(bilet);
-		rezervaSiAfiseazaBiletOnline(adapter);
+		IBiletOnline biletOnline = new BiletAdapter(bilet);
+		rezervaSiAfiseazaBiletOnline(biletOnline);
+		
+		IBiletOnline biletOnlineClasa = new BiletAdapterClase(50);
+		rezervaSiAfiseazaBiletOnline(biletOnlineClasa);
 	}
 }
