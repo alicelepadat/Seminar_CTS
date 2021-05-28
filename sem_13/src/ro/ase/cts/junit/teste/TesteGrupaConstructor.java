@@ -2,11 +2,15 @@ package ro.ase.cts.junit.teste;
 
 import static org.junit.Assert.*;
 
+import org.junit.Before;
 import org.junit.Test;
 
 import ro.ase.cts.junit.clase.Grupa;
+import ro.ase.cts.junit.clase.IStudent;
+import ro.ase.cts.junit.clase.Student;
 
-public class TesteGrupa {
+public class TesteGrupaConstructor {
+	
 
 	@Test
 	public void testConstructorNrGrupa() {
@@ -46,4 +50,5 @@ public class TesteGrupa {
 	public void testConstructorPerformanta() {
 		Grupa grupa = new Grupa(1080);
 	}
+
 }

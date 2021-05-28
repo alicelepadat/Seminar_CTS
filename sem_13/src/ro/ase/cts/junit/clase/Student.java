@@ -3,7 +3,7 @@ package ro.ase.cts.junit.clase;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Student {
+public class Student implements IStudent{
 	 private String nume;
 	    private List<Integer> note;
 
