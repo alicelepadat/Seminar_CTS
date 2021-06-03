@@ -2,12 +2,9 @@ package ro.ase.cts.junit.teste;
 
 import static org.junit.Assert.*;
 
-import org.junit.Before;
 import org.junit.Test;
 
 import ro.ase.cts.junit.clase.Grupa;
-import ro.ase.cts.junit.clase.IStudent;
-import ro.ase.cts.junit.clase.Student;
 
 public class TesteGrupaConstructor {
 	

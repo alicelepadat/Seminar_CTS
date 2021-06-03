@@ -33,24 +33,29 @@ public class Grupa {
         this.studenti.addAll(studenti);
     }
 
-    public void adaugaStudent(IStudent student){
-        studenti.add(student);
-    }
-
     public IStudent getStudent(int index){
         if(index>=0 && index< studenti.size()){
             return studenti.get(index);
         }
         throw new IndexOutOfBoundsException();
     }
+    
+    public void adaugaStudent(IStudent student){
+        studenti.add(student);
+    }
 
     public float getPromovabilitate(){
+    	if(studenti.size() == 0) {
+        	throw new IndexOutOfBoundsException();
+        }
+    	
         int nrRestantieri=0;
+        
         for(IStudent student:studenti){
             if(student.areRestante()){
                 nrRestantieri++;
             }
         }
-        return studenti.size()/nrRestantieri;
+        return (float)(studenti.size()-nrRestantieri)/studenti.size();
     }
 }
