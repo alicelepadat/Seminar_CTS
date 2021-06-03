@@ -1,45 +1,51 @@
-package ro.ase.cts.mocks;
+package ro.ase.cts.teste.mocks;
 
 import java.util.List;
 
 import ro.ase.cts.junit.clase.IStudent;
 
-public class StubStudent implements IStudent {
+public class DummyStudent implements IStudent {
 
 	@Override
 	public String getNume() {
 		// TODO Auto-generated method stub
-		return "Gigel";
+		return null;
 	}
 
 	@Override
 	public void setNume(String nume) {
+		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
 	public List<Integer> getNote() {
+		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
 	public void adaugaNota(int nota) {
+		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
 	public float calculeazaMedie() {
-		return 8.5f;
+		// TODO Auto-generated method stub
+		return 0;
 	}
 
 	@Override
 	public int getNota(int index) {
-		return 8;
+		// TODO Auto-generated method stub
+		return 0;
 	}
 
 	@Override
 	public boolean areRestante() {
+		// TODO Auto-generated method stub
 		return false;
 	}
-
+	
 }

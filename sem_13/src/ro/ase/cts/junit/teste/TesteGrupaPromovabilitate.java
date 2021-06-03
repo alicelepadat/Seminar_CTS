@@ -3,14 +3,18 @@ package ro.ase.cts.junit.teste;
 import static org.junit.Assert.*;
 
 import org.junit.Test;
+import org.junit.experimental.categories.Category;
 
 import ro.ase.cts.junit.clase.Grupa;
 import ro.ase.cts.junit.clase.IStudent;
 import ro.ase.cts.junit.clase.Student;
+import ro.ase.cts.junit.teste.categorii.IGetPromovabilitateCategory;
+import ro.ase.cts.junit.teste.categorii.ITesteUrgenteCategory;
 
 public class TesteGrupaPromovabilitate {
 
 	@Test
+	@Category(IGetPromovabilitateCategory.class)
 	public void testGetPromovabilitateRight() {
 		Grupa grupa = new Grupa(1081);
 		for(int i=0;i<10;i++) {
@@ -30,6 +34,7 @@ public class TesteGrupaPromovabilitate {
 	}
 	
 	@Test
+	@Category({IGetPromovabilitateCategory.class, ITesteUrgenteCategory.class})
 	public void testPromovabilitateMinima() {
 		Grupa grupa = new Grupa(1070);
 		for(int i=0;i<5;i++) {
@@ -43,6 +48,7 @@ public class TesteGrupaPromovabilitate {
 	}
 	
 	@Test
+	@Category(IGetPromovabilitateCategory.class)
 	public void testPromovabilitateMaxima() {
 		Grupa grupa = new Grupa(1081);
 		for(int i=0;i<5;i++) {
@@ -56,6 +62,7 @@ public class TesteGrupaPromovabilitate {
 	}
 	
 	@Test(expected = IndexOutOfBoundsException.class)
+	@Category(IGetPromovabilitateCategory.class)
 	public void testGetPromovabilitateEroare() {
 		Grupa grupa = new Grupa(1080);
 		

@@ -1,4 +1,4 @@
-package ro.ase.cts.mocks;
+package ro.ase.cts.teste.mocks;
 
 import java.util.List;
 

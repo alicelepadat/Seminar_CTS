@@ -6,9 +6,9 @@ import org.junit.Test;
 
 import ro.ase.cts.junit.clase.Grupa;
 import ro.ase.cts.junit.clase.IStudent;
-import ro.ase.cts.mocks.DummyStudent;
-import ro.ase.cts.mocks.FakeStudent;
-import ro.ase.cts.mocks.StubStudent;
+import ro.ase.cts.teste.mocks.DummyStudent;
+import ro.ase.cts.teste.mocks.FakeStudent;
+import ro.ase.cts.teste.mocks.StubStudent;
 
 public class TesteGrupaMock {
 
